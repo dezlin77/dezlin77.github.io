@@ -1,6 +1,11 @@
 
 @import "import-styles.css";
 
+* {
+	margin: 10%;
+	padding: 1;
+}
+
 body{
 	text-align: center;
 	background-color: "beige";
