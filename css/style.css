@@ -26,6 +26,14 @@ p {
 	color: orange;
 }
 
+a:link {
+	color: lightblue;
+}
 
+a:visited {
+	color: lightgrey;
+}
 
-
+a:hover {
+	color: firebrick;
+}
