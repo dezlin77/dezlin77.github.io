@@ -3,17 +3,15 @@
 
 body{
 	text-align: center;
-	background-color: beige;
-
+	background-color: "beige";
 }
-
 
 h1 {
 	font-size: 72px;
-	color: black;
+	color: "black";
 }
 
 p {
 	font-size: 24px;
-	color: black;
+	color: "black";
 }
