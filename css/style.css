@@ -1,18 +1,19 @@
 
-@import "css/import-styles.css";
+@import "import-styles.css";
 
 body{
 	text-align: center;
+	background-color: beige;
 
 }
 
 
 h1 {
 	font-size: 72px;
-	color: beige;
+	color: black;
 }
 
 p {
 	font-size: 24px;
-	color: beige;
+	color: black;
 }
