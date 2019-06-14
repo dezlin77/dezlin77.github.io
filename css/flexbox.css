@@ -1,16 +1,41 @@
 /* ================================= 
-  Flexbox
+  Flexbox &
+  Media Queries
+==================================== */
+/*
+@media only screen and (min-width: 1200px) {
+*/
+
+/* ================================= 
+  Media Queries
 ==================================== */
 
-.container {
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	justify-content: space-around;
-}
+@media (min-width: 60px) {
 
-.item-2 {
-	order: 0;
+	.main-header,
+	.main-nav,
+	.row {
+		display: flex;
+	}
+
+	.main-header {
+		flex-direction: column;
+		align-items: center;
+		justify-content: space-between;
+	}
+
+	.col {
+		flex: 1;
+	
+		display: flex;
+		flex-direction: column;
+	}
+
+	.button {
+		margin-top: auto;
+		align-self: flex-start; /* flex-end */
+	}
+
 }
 
 
