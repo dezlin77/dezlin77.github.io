@@ -124,11 +124,12 @@ h2 {
 ==================================== */
 
 @media (min-width: 769px) {
-	.main-header,
+	.main-header, 
 	.row {
 		width: 90%;
 		margin: 0 auto;
 	}
+
 	.tagline {
 		font-size: 1.4em;
 	}
