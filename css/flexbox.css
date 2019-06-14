@@ -8,3 +8,10 @@
 	flex-wrap: wrap;
 	justify-content: space-around;
 }
+
+.item-2 {
+	order: -1;
+}
+
+
+
