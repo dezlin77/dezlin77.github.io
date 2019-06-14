@@ -70,7 +70,8 @@ a:hover {
 
 /* Media Queries --- */
 
-@media (max-width: 960px) {
+@media only screen and (max-width: 960px),
+ 	only screen (min-width: 400px) and (orientation: landscape) {
 	body {
 		background: royalblue;
 	}
