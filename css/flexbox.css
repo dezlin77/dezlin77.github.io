@@ -2,10 +2,11 @@
   Media Queries
 ==================================== */
 
-@media (min-width: 1200px) {
+@media (min-width: 769px) {
 
 	.main-header,
-	.main-nav, {
+	.main-nav,
+	.row {
 		display: flex;
 	}
 
@@ -33,12 +34,6 @@
  		height: 10vh;
  		margin: 0;
  	}
-
- 	.row {
-		display: flex;
- 	}
-}
-
 
 }
 

@@ -32,11 +32,12 @@ h3 {
 a {
 	text-decoration: none;
 }
-h2 {
-	text-align: center;
-}
 img {
 	max-width: 100%;
+}
+
+h2 {
+	text-align: center;
 }
 
 /* ================================= 
@@ -89,9 +90,6 @@ img {
 	border-radius: .35em;
 	margin: 0 .5em .8em;
 }
-.sectitle {
-	text-align: center;
-}
 .main-footer {
 	background: #d9e4ea;
 	padding: 2em 0;
@@ -115,6 +113,10 @@ img {
 	padding: .625em 1.25em;
 	background: #3acec2;
 	border-radius: .35em;
+}
+
+.sectitle {
+	text-align: center;
 }
 
 /* ================================= 
