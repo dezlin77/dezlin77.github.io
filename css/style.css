@@ -50,3 +50,20 @@ a:visited {
 a:hover {
 	color: firebrick;
 }
+
+
+/* Media Queries --- */
+
+@media (max-width: 960px) {
+	body {
+		background: royalblue;
+	}
+	p {
+		color: beige;
+	}
+
+}
+
+
+
+
