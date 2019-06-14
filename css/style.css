@@ -4,7 +4,6 @@
 * {
 	margin: 5%;
 	padding: 0;
-	text-decoration: none;
 }
 
 body{
@@ -29,6 +28,7 @@ p {
 
 a:link {
 	color: lightblue;
+	 text-decoration: none;
 }
 
 a:visited {
