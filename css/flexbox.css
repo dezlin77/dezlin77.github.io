@@ -27,13 +27,24 @@
 		align-self: flex-start; /* flex-end */
 	}
 
-	.newpara {
+	.newpara, .banner {
   		display: flex; /* flex behavior (displays children inline) */
  		justify-content: center; /* horizontal centering */
  		align-items: center; /* vertical centering */
  		height: 10vh;
  		margin: 0;
  	}
+
+ 	.main-header {
+ 		display: flex;
+ 		flex-direction: row;
+ 	}
+
+ 	.bodye {
+ 		display: flex;
+ 		justify-content: center;
+ 	}
+
 
 }
 
