@@ -1,5 +1,5 @@
 /*
-
+calculate the average price of all the products
 */
 
 var avg = {

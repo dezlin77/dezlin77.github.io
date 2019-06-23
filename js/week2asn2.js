@@ -1,25 +1,32 @@
 /*
-find largest number function without using math.max()
+find 2 different methods to create a proper object as a parameter of the calculate function
 */
 
 //method 1
 
-var values = {n1:2, n2:3};
+var foo1 = {
+	op: "+",
+	n1: 1,
+	n2: 2
+};
 
-values.calculate = function calculate(args){
+
+function calculate(args){
 	let result;
-	if(args==="+"){
-		result = values.n1+values.n2;
-	} else if (args==="-"){
-		result=values.n1-values.n2;
-	} else{
-
-		result="Not supported";
+	if (args.op==="+") {
+		result = args.n1 + args.n2;
+	}
+	else if (args.op==="-") {
+		result = args.n1 - args.n2;
+	}
+	else {
+		result = "Not supported";
 	}
 	return result;
 }
 
-console.log(args="-");
+calculate(foo1);
+
 
 //method 2
 
