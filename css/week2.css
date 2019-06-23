@@ -1,22 +1,164 @@
+/* ================================= 
+  Base Element Styles
+==================================== */
 
-
-
-
-
-
-
-.container {
+* {
   box-sizing: border-box;
-  width: 90%;
-  max-width: 1080px;
-  background: white;
-  padding: 30px 15px;
-  margin: 0 auto;
-  position: relative;
-  overflow: hidden;
-  border-radius: 5px;
-  -webkit-box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.1);
-  -moz-box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.1);
-  box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.1);
+}
+body {
+  font-size: 1.35em;
+  font-family: 'Varela Round', sans-serif;
+  color: #fff;
+  background: #e8e9e9;
+  padding-left: 1px;
+  padding-right: 1px;
 }
 
+#main-header, #bodye {
+  padding: 10px;
+  background: #fff;
+    border-radius: 5px;
+  margin: 45px auto;
+    box-shadow: 0 1.5px 0 0 rgba(0,0,0,0.1);
+}
+
+#main-header {
+  color: black;
+}
+
+
+.item-1 {
+  color: #fff;
+  padding: 15px;
+  margin: 5px;  
+  background: #3db5da;
+  border-radius: 3px;
+}
+
+.rowe {
+  color: #fff;
+  margin: 1px;  
+  background: #3db5da;
+
+  }
+
+.img1{
+  display: none;
+}
+
+.icone {
+    background-color: #fff;
+    display: block;
+    position: absolute;
+    cursor: pointer;
+}
+
+.across {
+  background-color: #fff;
+  position: absolute;
+  cursor: pointer;
+  visibility: hidden;
+}
+
+.main-footer {
+    background-color: #fff;
+    text-align: center;
+    margin: none;
+}
+
+.addCursor {
+  cursor: pointer;
+}
+
+/* ================================= 
+  Flexbox
+==================================== */
+
+.newpara, .banner, .main-footer {
+      display: flex; /* flex behavior (displays children inline) */
+    justify-content: center; /* horizontal centering */
+    align-items: center; /* vertical centering */
+    height: 10vh;
+    margin: 0;
+  }
+
+  #main-header, #bodye {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .item-1{
+    flex-grow: 2;
+  }
+
+.rowe {
+  text-align: center;
+  flex-direction: row;
+  }
+
+
+/* ================================= 
+  Media Queries
+==================================== */
+
+@media screen and (min-width: 1200px) {
+
+.img1 {
+display: none;
+}
+
+.item {
+  display: block;
+}
+
+.rowe { 
+justify-content: space-around;
+align-content: flex-start;
+  width: 600px;
+  }
+  
+}
+
+@media screen and (min-width: 500px) and (max-width: 800px) {
+
+.img1 {
+display: block;
+}
+
+.item {
+  display: none;
+}
+
+.rowe { 
+  width: none;
+justify-content: space-around;
+align-content: flex-start;
+
+  }
+  
+
+}
+
+@media screen and (min-width: 1px) and (max-width: 500px) {
+
+.img1 {
+display: block;
+}
+
+.item {
+  display: none;
+}
+
+.rowe {
+  color: #fff;
+  padding: none;
+  margin: none; 
+  background: #3db5da;
+  width: none;
+  text-align: center;
+  flex-direction: row;
+  flex-wrap: wrap
+  }
+
+}
