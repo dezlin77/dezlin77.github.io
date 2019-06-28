@@ -1,72 +1,93 @@
 <!DOCTYPE html>
 <html>
-
 <head>
-<title>Ken's Week 2 Homework</title>
-<link rel="stylesheet" href="../css/week2.css">
-<link rel="stylesheet" href="week2js.js">
-
+  <title>Ken's Week 2 Homework</title>
+  <link rel="stylesheet" href="webtest1.css">
 </head>
 
 <body>
+  <header name="top" class="main-header">
+    <h1 class="name"><a href="#">Website Title / Logo</a></h1>
+    <a href="#" onclick="openMenu()">
+      <img class="nav-bar" src="img1.png" alt="nav-bar">
+    </a>
+    <ul class="main-nav">
+      <li><a href="#">Item 1</a></li>
+      <li><a href="#">Item 2</a></li>
+      <li><a href="#">Item 3</a></li>
+      <li><a href="#">Item 4</a></li>
+    </ul>
+  </header>
 
-
-	  	<script src="../js/week2asn1.js"></script>
-	  	<script src="../js/week2asn2.js"></script>
-	  	<script src="../js/week2asn3.js"></script>
-
-
-<!--
-Assignment 4-1
--->
-
-
-    <div class="container">
-        <h1 id="mainTitle" class="addCursor">Welcome Message</h1>
+  <div id="side-menu" class="side-nav">
+      <a href="#" class="btn-close" onclick="closeMenu()">X</a>
+      <div class="nav-list">
+        <a href="#">Item 1</a>
+        <a href="#">Item 2</a>
+        <a href="#">Item 3</a>
+        <a href="#">Item 4</a>
+      </div> 
     </div>
 
-<!--
-Assignment 4-2
--->
+<div class="banner">
+    <h1 class="headline" id="theBestCity">Welcome Message</h1>
+</div>
 
-    <header class="main-header">
-        <div class="bodye">
-            <h3 class="item-1">Website Title / Logo</h3>
-            <ul class="main-nav">
-                <li><a href="#">Item 1</a></li>
-                <li><a href="#">Item 2</a></li>
-                <li><a href="#">Item 3</a></li>
-                <li><a href="#">Item 4</a></li>
-            </ul>
-            <div class="icone"></div>
-            <div class="across"></div>
+    <h2>Section Title</h2>
+
+  <main>
+    <section class="container">
+        <div class="col 1">
+            <h2>Content Box 1</h2>
+            <p>Random Random Random Random Random Random Random Random Random Random Random Random Random Random Random Random Random Random Random Random Random Random Random Random Random Random Random Random Random Random Random Random Random Random Random Random Random Random Random Random Random Random Random Random Random</p>
         </div>
-    </header>
+        
+        <div class="col 2">
+            <h2>Content Box 2</h2>
+            <p>Random Random Random Random Random Random Random Random Random Random Random Random Random Random Random Random Random Random Random Random Random Random Random Random Random Random Random Random Random Random Random Random Random Random Random Random Random Random Random Random Random Random Random Random Random</p>
+        </div>
+        <div class="col 3">
+            <h2>Content Box 3</h2>
+            <p>Random Random Random Random Random Random Random Random Random Random Random Random Random Random Random Random Random Random Random Random Random Random Random Random Random Random Random Random Random Random Random Random Random Random Random Random Random Random Random Random Random Random Random Random Random</p>
+        </div>
+        <div class="col 4">
+            <h2>Content Box 4</h2>
+            <p>Random Random Random Random Random Random Random Random Random Random Random Random Random Random Random Random Random Random Random Random Random Random Random Random Random Random Random Random Random Random Random Random Random Random Random Random Random Random Random Random Random Random Random Random Random</p>
+        </div>
+    </section>
 
-
-
-
-<!--
-Assignment 4-3
--->
-
-	<footer class="main-footer">
-        <p class="addCursor">Call to Action</p>
-	</footer>
-
-    <div class="newcontent">
-            <ul class="main-nav2">
-                <li><a href="#">Item 5</a></li>
-                <li><a href="#">Item 6</a></li>
-                <li><a href="#">Item 7</a></li>
-                <li><a href="#">Item 8</a></li>
-            </ul>
+    <div class="action-bar">
+      <div class="button">
+          <a href="#toggleList" id='toggleList'>Call to Action</a>
+      </div>
     </div>
 
+    <section class="container2" style="display:none">
+        <div class="col 5">
+            <h2>Content Box 5</h2>
+            <p>Random Random Random Random Random Random Random Random Random Random Random Random Random Random Random Random Random Random Random Random Random Random Random Random Random Random Random Random Random Random Random Random Random Random Random Random Random Random Random Random Random Random Random Random Random</p>
+        </div>
+        
+        <div class="col 6">
+            <h2>Content Box 6</h2>
+            <p>Random Random Random Random Random Random Random Random Random Random Random Random Random Random Random Random Random Random Random Random Random Random Random Random Random Random Random Random Random Random Random Random Random Random Random Random Random Random Random Random Random Random Random Random Random</p>
+        </div>
+        <div class="col 7">
+            <h2>Content Box 7</h2>
+            <p>Random Random Random Random Random Random Random Random Random Random Random Random Random Random Random Random Random Random Random Random Random Random Random Random Random Random Random Random Random Random Random Random Random Random Random Random Random Random Random Random Random Random Random Random Random</p>
+        </div>
+        <div class="col 8">
+            <h2>Content Box 8</h2>
+            <p>Random Random Random Random Random Random Random Random Random Random Random Random Random Random Random Random Random Random Random Random Random Random Random Random Random Random Random Random Random Random Random Random Random Random Random Random Random Random Random Random Random Random Random Random Random</p>
+        </div>
+    </section>
+  </main>
+  
+    <footer class="main-footer">
+        <span><a href="../index.html">Back to Home</a></span><br>
+        <span><a href="index.html">Back to Homework</a></span>
+    </footer>
 
-
-<a href="../index.html">Back to Home</a><br>
-<a href="index.html">Back to Homework</a>
-<div>Icons made by Freepik from <a href="https://www.flaticon.com/">www.flaticon.com</a> is licensed by CC 3.0</div>
+<script src="webtest1.js"></script>
 </body>
 </html>
