@@ -7,25 +7,16 @@ const app = express();
 app.use(bodyParser.urlencoded({ extended: false}));
 app.use(cookieParser());
 
-//for card1, just for fun
-const colors = [
-    'red',
-    'orange',
-    'yellow',
-    'green',
-    'blue',
-    'purple'
-  ];
-
 app.set('view engine', 'pug');
 
-const mainRoutes = require('./routes/index');
+const mainRoutes = require('./routes'); //or ./routes/index
 const cardRoutes = require('./routes/cards');
 
 app.use(mainRoutes);
 app.use('/cards', cardRoutes);
+app.use('/static', express.static('public'));
 
-/*
+
 app.use((req, res, next) => {
     const err = new Error('Not Found');
     err.status = 404;
@@ -37,7 +28,7 @@ app.use((err, req, res, next) => {
     res.status(err.status);
     res.render('error');
 });
-*/
+
 
 //back-end footer
 

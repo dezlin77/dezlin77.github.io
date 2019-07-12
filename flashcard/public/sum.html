@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ken Week 3 AJAX</title>
+</head>
+<body>
+    <h1>Ken Week 3 AJAX</h1>
+    <span>Enter number : </span>
+    <input id ="input_num" type = "number">
+    <input type ="button" value = "Get Result!" onclick = "getResult()"/><br>
+    <span id ="resultMsg"></span>
+</body>
+</html>
+<script>
+    const inputNum = document.querySelector("#input_num");
+    const resultMsg = document.querySelector("#resultmsg");
+
+
+    function getResult(){
+        const valuex = inputNum;
+        if (valuex !== undefined){
+            const src = "http://localhost:3000/getData?number="+ valuex;
+            fetch(src).then((res)=>{
+                return res.text(); 
+            }).then((result) => {
+                resultMsg.textContent = result;
+            });
+        }
+    }
+</script>

@@ -1,0 +1,10 @@
+extends layout.pug
+
+block content
+    section#content
+          form(action = '/hello2', method = 'get')
+            label Enter name : 
+            input(type='text', name='name') 
+            button(type = 'submit') submit
+
+
